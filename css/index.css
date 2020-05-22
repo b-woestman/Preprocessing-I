@@ -144,11 +144,9 @@ html {
 }
 .flex {
   display: flex;
-  margin: 1%;
 }
 .container {
   display: flex;
-  margin: 1%;
   flex-direction: column;
   width: 100%;
   max-width: 1000px;
@@ -157,9 +155,14 @@ html {
 header {
   width: 100%;
   display: flex;
-  margin: 1%;
   justify-content: flex-end;
-  margin: 2% 1%;
+  padding: 2% 1%;
+}
+@media (max-width: 500px) {
+  header {
+    justify-content: space-evenly;
+    padding: 1%;
+  }
 }
 header a {
   width: 10%;
@@ -168,9 +171,14 @@ header a {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  header a {
+    width: 25%;
+    text-align: center;
+  }
+}
 .top-section {
   display: flex;
-  margin: 1%;
   width: 100%;
   flex-direction: column;
   justify-content: center;
@@ -179,11 +187,21 @@ header a {
   border-radius: 8px;
   padding: 5%;
 }
+@media (max-width: 500px) {
+  .top-section {
+    align-items: center;
+  }
+}
 .top-section img {
   width: 30%;
   height: auto;
   border-radius: 8px;
   margin: 1%;
+}
+@media (max-width: 500px) {
+  .top-section img {
+    width: 50%;
+  }
 }
 .top-section h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -191,6 +209,12 @@ header a {
   font-size: 2.4rem;
   font-size: 4rem;
   margin: 1%;
+}
+@media (max-width: 500px) {
+  .top-section h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 .top-section #witty-saying {
   width: 100%;
@@ -200,11 +224,23 @@ header a {
   margin: 1%;
   border-bottom: 1px solid darkgray;
 }
+@media (max-width: 500px) {
+  .top-section #witty-saying {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
 .top-section p {
   width: 80%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   margin: 1%;
+}
+@media (max-width: 500px) {
+  .top-section p {
+    text-align: center;
+    font-size: 1.6rem;
+  }
 }
 .top-section #contact-me {
   width: 20%;
@@ -213,4 +249,149 @@ header a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   margin: 1%;
+}
+@media (max-width: 500px) {
+  .top-section #contact-me {
+    width: 40%;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+.middle-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .middle-section {
+    width: 98%;
+  }
+}
+.middle-section .about-me {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1%;
+}
+.middle-section .about-me h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .middle-section .about-me h2 {
+    font-size: 2rem;
+  }
+}
+.middle-section .about-me p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .middle-section .about-me p {
+    font-size: 1.4rem;
+  }
+}
+.middle-section .skills {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1%;
+}
+.middle-section .skills h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .middle-section .skills h2 {
+    font-size: 2rem;
+  }
+}
+.middle-section .skills .skill-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 1%;
+}
+.middle-section .skills .skill-list span {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  padding: 1% 3%;
+  border: 1px solid darkgray;
+}
+@media (max-width: 500px) {
+  .middle-section .skills .skill-list span {
+    font-size: 1.4rem;
+  }
+}
+.bottom-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.bottom-section h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .bottom-section h2 {
+    font-size: 2rem;
+  }
+}
+.bottom-section #work-chart {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.bottom-section #work-chart .work-rows {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin: 0;
+}
+.bottom-section #work-chart .work-rows span {
+  width: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  padding: 1%;
+  border: 1px solid darkgray;
+}
+@media (max-width: 500px) {
+  .bottom-section #work-chart .work-rows span {
+    font-size: 1.4rem;
+  }
+}
+.bottom-section #work-chart #work-header-row {
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: steelblue;
+  border-radius: 8px;
+  margin: 2% 0 0 0;
+}
+footer span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  padding: 5%;
+  color: floralwhite;
+}
+@media (max-width: 500px) {
+  footer span {
+    font-size: 1rem;
+  }
 }
